@@ -12,16 +12,14 @@ html {
     scroll-behavior: smooth;
 }
 
-main {
-    display: block;
-    max-width: 1200px;
-    margin: auto;
-    text-align: center;
-    /* width: 100%; */
-}
+
 
 header {
-    background-color: #fbfbfb;
+    /* background-color: #FFB5DA; */
+    background-image: linear-gradient(0deg,
+            rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("../img/diseno-patron-color-pastel-acuarela.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     box-shadow: 5px 0 10px rgba(0, 0, 0, 0.3);
     width: 100%;
     height: 90px;
@@ -29,6 +27,14 @@ header {
     align-items: center;
     justify-content: space-between;
     position: fixed;
+}
+
+main {
+    display: block;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    /* width: 100%; */
 }
 
 header a {
@@ -48,7 +54,7 @@ header a {
 }
 
 .contacto {
-    background-color: rgba(175, 89, 158, 0.3);
+    background-color: rgba(248, 149, 207, 0.694);
     margin: 1rem;
     border-radius: 10px;
     color: #0f0f0f;
@@ -73,12 +79,17 @@ header a {
     width: 400px;
     border-radius: 50%;
     margin: 2rem 0 2rem;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.3);
     /* width: 100%; */
     justify-content: center;
 }
 
 body {
-    background-color: #fbfbfb;
+    /* background-color: #fbfbfb; */
+    background-image: linear-gradient(0deg,
+            rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("../img/textura\ pastel\ 3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     max-width: 100vw;
 }
 
@@ -94,6 +105,28 @@ h2 {
     padding: 0.5rem;
 }
 
+nav a {
+    padding: 12px;
+}
+
+nav a:hover {
+    background-color: rgba(248, 149, 207, 0.694);
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+}
+
+div.menu-item a.active {
+    border-radius: 10px;
+    background: #f6efb4;
+    transition: background-color 0.3s;
+}
+
+#boton:hover {
+    background-color: #944a9f;
+    padding: 12px;
+    color: rgba(42, 39, 41, 0.962);
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -106,19 +139,60 @@ p {
 }
 
 #boton {
-    background-color: #af599e;
-    color: #fbfbfb;
+    /* background-color: #e9aafb; */
+    background-image: linear-gradient(0deg,
+            rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../img/diseno-patron-color-pastel-acuarela.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.3);
+    color: #0f0f0f;
     font-size: 20px;
+    font-weight: bold;
     border-radius: 1.8rem;
-    padding: 0.6rem;
+    padding: 0.9rem;
     margin: 2rem;
 }
 
 footer {
-    background-color: #af599e;
-    color: #fbfbfb;
+    /* background-color: #e9aafb; */
+    background-image: linear-gradient(0deg,
+            rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("../img/diseno-patron-color-pastel-acuarela.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.3);
+    color: #060606;
     height: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: bold;
+}
+
+@media(min-width:1024px) {
+    h1 {
+        font-size: 48px;
+        text-align: left;
+        padding-left: 25px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    #inicio {
+        flex-direction: row;
+    }
+
+    #inicio p {
+        text-align: justify;
+        line-height: 35px;
+    }
+
+    .escritorio {
+        text-align: left;
+    }
+
+    #contacto {
+        min-height: 10vh;
+    }
 }
